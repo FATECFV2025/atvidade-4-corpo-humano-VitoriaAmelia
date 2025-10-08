@@ -1,10 +1,12 @@
 package main.java;
 public class CorpoHumano {
+    // Atributos da classe
     private double massa;
     private double volumeCorpo;
     private double densidadeCorpo;
     private double alturaPessoa;
 
+    // Construtor
     public CorpoHumano(double massa, double volumeCorpo, double densidadeCorpo, double alturaPessoa) {
         this.massa = massa;
         this.volumeCorpo = volumeCorpo;
@@ -12,6 +14,7 @@ public class CorpoHumano {
         this.alturaPessoa = alturaPessoa;
     }
 
+    // Métodos getters 
     public double getMassa() {
         return massa;
     }
@@ -27,6 +30,8 @@ public class CorpoHumano {
     public double getAlturaPessoa() {
         return alturaPessoa;
     }
+
+    // Métodos setters 
 
     public void setMassa(double massa) {
         this.massa = massa;
@@ -44,6 +49,7 @@ public class CorpoHumano {
         this.alturaPessoa = alturaPessoa;
     }
 
+    // Método que calcula o IMC
     public double calcularIMC() {
         return massa / (alturaPessoa * alturaPessoa);
     }
