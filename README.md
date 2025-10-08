@@ -39,6 +39,39 @@
 
 <b>Colocar essa informação no Readme do Git ou Em comentários de código na classe main </b>
 
+### Resposta das perguntas anteriores:
+### Resultados dos Testes com Modificadores de Acesso
+
+**Primeiro caso: **  
+**O que aconteceu:**  
+O programa não compilou. Na classe `CorpoHumano` ocorreu erro de sintaxe e na classe `Main` apareceu a mensagem:  
+> `"massa has private access in CorpoHumano"`  
+Ou seja, o atributo `massa` tem acesso privado e não pode ser usado diretamente fora da classe.  
+
+**Conclusão:**  
+Como o atributo é privado, ele só pode ser acessado dentro da própria classe.  
+Para alterar ou consultar o valor, é preciso usar os métodos **getter** e **setter**.  
+
+
+
+**Segundo caso: **  
+**O que aconteceu:**  
+Agora o programa compilou normalmente. Também ficou possível alterar o valor da massa diretamente no objeto.  
+
+**Conclusão:**  
+Quando o atributo é **público**, ele pode ser acessado e modificado por qualquer parte do programa.  
+Isso remove a proteção de encapsulamento, o que pode causar problemas de segurança e integridade dos dados.  
+
+
+**Terceiro caso:**  
+**O que aconteceu:**  
+O programa teve erro na compilação. A classe `Main` não conseguiu chamar o método `setVolume`, pois ele ficou privado.  
+
+**Conclusão:**  
+Um método **privado** só pode ser usado dentro da própria classe.  
+Fora dela, ele não consegue ser chamado nem cumprir seu papel de modificar o atributo.
+
+
 
 ## DESAFIO 🚀
 
