@@ -57,8 +57,6 @@ Agora o programa compilou normalmente. Também ficou possível alterar o valor d
 
 **Conclusão:**  
 Quando o atributo é **público**, ele pode ser acessado e modificado por qualquer parte do programa.  
-Isso remove a proteção de encapsulamento, o que pode causar problemas de segurança e integridade dos dados.  
-
 
 **3.**  
 **O que aconteceu:**  
