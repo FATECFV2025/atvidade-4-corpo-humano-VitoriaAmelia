@@ -39,8 +39,7 @@
 
 <b>Colocar essa informação no Readme do Git ou Em comentários de código na classe main </b>
 
-### Resposta das perguntas anteriores:
-### Resultados dos Testes com Modificadores de Acesso
+## Respostas das perguntas anteriores: 👀
 
 **Primeiro caso: **  
 **O que aconteceu:**  
@@ -70,6 +69,7 @@ O programa teve erro na compilação. A classe `Main` não conseguiu chamar o m�
 **Conclusão:**  
 Um método **privado** só pode ser usado dentro da própria classe.  
 Fora dela, ele não consegue ser chamado nem cumprir seu papel de modificar o atributo.
+
 
 
 
