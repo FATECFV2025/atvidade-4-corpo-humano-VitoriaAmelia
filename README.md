@@ -1,3 +1,5 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/RPHb6JFs)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=20970677&assignment_repo_type=AssignmentRepo)
 # Atividade 4 - Classe e Objeto
 
 
@@ -36,6 +38,33 @@
 - Coloque as respostas em um arquivo txt
 
 <b>Colocar essa informação no Readme do Git ou Em comentários de código na classe main </b>
+
+## Respostas das perguntas anteriores: 👀
+
+**1.**  
+**O que aconteceu:**  
+O programa não compilou. Na classe `CorpoHumano` ocorreu erro de sintaxe e na classe `Main` apareceu a mensagem: `"massa has private access in CorpoHumano"`, ou seja, o atributo `massa` tem acesso privado e não pode ser usado diretamente fora da classe.  
+
+**Conclusão:**  
+Como o atributo é privado, ele só pode ser acessado dentro da própria classe. Para alterar ou consultar o valor, é preciso usar os métodos **getter** e **setter**.  
+
+
+
+**2.**  
+**O que aconteceu:**  
+Agora o programa compilou normalmente. Também ficou possível alterar o valor da massa diretamente no objeto.  
+
+**Conclusão:**  
+Quando o atributo é **público**, ele pode ser acessado e modificado por qualquer parte do programa.  
+
+**3.**  
+**O que aconteceu:**  
+O programa teve erro na compilação. A classe `Main` não conseguiu chamar o método `setVolume`, pois ele ficou privado.  
+
+**Conclusão:**  
+Um método **privado** só pode ser usado dentro da própria classe. Fora dela, ele não consegue ser chamado nem cumprir seu papel de modificar o atributo.
+
+
 
 
 ## DESAFIO 🚀
