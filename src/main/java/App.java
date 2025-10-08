@@ -2,29 +2,42 @@ package main.java;
 import java.util.Scanner;
 
 public class App {
-        //Comentário
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
 
-    public static void funcao_teste (){
-        //Biblioteca para entrada de dados
-        Scanner ler = new Scanner(System.in); 
+        System.out.print("Digite a massa inicial (kg): ");
+        double massaInicial = entrada.nextDouble();
 
-        //variável local a
-        String v2;
-        int v1;
+        System.out.print("Digite o volume inicial (m³): ");
+        double volumeInicial = entrada.nextDouble();
 
-        System.out.println("Comando de Saida de Dados");
-        
-        System.out.printf("Informe uma palavra: ");
-        v2 = ler.next();
+        System.out.print("Digite a densidade inicial (kg/m³): ");
+        double densidadeInicial = entrada.nextDouble();
 
-        System.out.printf("Informe um número: ");
-        v1 = ler.nextInt();
+        System.out.print("Digite a altura inicial (m): ");
+        double alturaInicial = entrada.nextDouble();
 
-        System.out.printf(v2+" "+v1);
-    }
-    public static void main(String[] args) throws Exception {
-        funcao_teste();
+        CorpoHumano corpo = new CorpoHumano(massaInicial, volumeInicial, densidadeInicial, alturaInicial);
 
+        System.out.println("=== VALORES INICIAIS ===");
+        System.out.println("Massa: " + corpo.getMassa() + " kg");
+        System.out.println("Volume: " + corpo.getVolumeCorpo() + " m³");
+        System.out.println("Densidade: " + corpo.getDensidadeCorpo() + " kg/m³");
+        System.out.println("Altura: " + corpo.getAlturaPessoa() + " m");
+        System.out.println("IMC: " + corpo.calcularIMC());
 
+        System.out.print("Digite uma nova massa (kg): ");
+        corpo.setMassa(entrada.nextDouble());
+
+        System.out.print("Digite uma nova altura (m): ");
+        corpo.setAlturaPessoa(entrada.nextDouble());
+
+        System.out.println("Novos valores:");
+        System.out.println("Massa: " + corpo.getMassa() + " kg");
+        System.out.println("Altura: " + corpo.getAlturaPessoa() + " m");
+        System.out.println("Novo IMC: " + corpo.calcularIMC());
+
+        entrada.close();
     }
 }
+
