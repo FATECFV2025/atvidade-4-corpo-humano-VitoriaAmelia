@@ -46,8 +46,7 @@
 O programa não compilou. Na classe `CorpoHumano` ocorreu erro de sintaxe e na classe `Main` apareceu a mensagem: `"massa has private access in CorpoHumano"`, ou seja, o atributo `massa` tem acesso privado e não pode ser usado diretamente fora da classe.  
 
 **Conclusão:**  
-Como o atributo é privado, ele só pode ser acessado dentro da própria classe.  
-Para alterar ou consultar o valor, é preciso usar os métodos **getter** e **setter**.  
+Como o atributo é privado, ele só pode ser acessado dentro da própria classe. Para alterar ou consultar o valor, é preciso usar os métodos **getter** e **setter**.  
 
 
 
@@ -63,8 +62,7 @@ Quando o atributo é **público**, ele pode ser acessado e modificado por qualqu
 O programa teve erro na compilação. A classe `Main` não conseguiu chamar o método `setVolume`, pois ele ficou privado.  
 
 **Conclusão:**  
-Um método **privado** só pode ser usado dentro da própria classe.  
-Fora dela, ele não consegue ser chamado nem cumprir seu papel de modificar o atributo.
+Um método **privado** só pode ser usado dentro da própria classe. Fora dela, ele não consegue ser chamado nem cumprir seu papel de modificar o atributo.
 
 
 
